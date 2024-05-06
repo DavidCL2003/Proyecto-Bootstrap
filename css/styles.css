@@ -1,3 +1,16 @@
-body{
-    background-color: blue;
+
+body {
+    background-color: #f8f9fa;
+}
+
+h1, h2, p {
+    color: #333;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #ffc107; 
 }
