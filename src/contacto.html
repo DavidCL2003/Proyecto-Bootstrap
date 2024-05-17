@@ -6,61 +6,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../img/favicon.jpg" type="image/x-icon">
     <link rel="shortcut icon" href="../img/favicon.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="Proyecto Bootstrap/estilos.css">
+    <link rel="stylesheet" href="Proyecto Bootstrap/styles.css">
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <title>Noticias</title>
+    <title>Formulario de contacto</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Rockstar Games: Noticias</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Rockstar Games: Formulario de Contacto</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="../index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="juegos.html">Juegos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="noticias.html">Noticias</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="juegos.html">Juegos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="noticias.html">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-    
-   
-
-    <footer class="bg-dark text-white py-3">
-        <div class="container">
-            <div class="row justify-content-center align-items-center">
-                <div class="col-lg-4">
-                    <p class="autor text-center mb-0">© 2024 Rockstar Games. Todos los derechos reservados.</p>
+        <h2 class="mt-4">Atención al usuario de Rockstar</h2>
+        <form action="#" method="POST">
+            <fieldset>
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" class="form-control" required>
                 </div>
-                <div class="col-lg-4 text-center">
-                    <div class="iconos">
-                        <a href="https://www.facebook.com/rockstargamesnoticias/?locale=es_LA" target="_blank"><img
-                                src="../img/face.png" alt="" width="30" height="30"></a>
-                        <a href="https://twitter.com/RockstarGames" target="_blank"><img src="../img/twitter.png" alt=""
-                                width="30" height="30"></a>
-                        <a href="http://www.instagram.com/" target="_blank"><img src="../img/inst.png" alt="" width="30"
-                                height="30"></a>
+                <div class="form-group">
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="dni">DNI:</label>
+                    <input type="text" id="dni" name="dni" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="juego">Escoja su juego relacionado con la consulta:</label>
+                    <select id="juego" name="juego" class="form-control" required>
+                        <option value="">Selecciona tu juego</option>
+                        <option value="San Andreas">Grand Theft Auto San Andreas</option>
+                        <option value="Chinatown">Grand Theft Auto Chinatown</option>
+                        <option value="Grand Theft Auto IV">Grand Theft Auto IV</option>
+                        <option value="Grand Theft Auto V">Grand Theft Auto V</option>
+                        <option value="Red Dead Redemption">Red Dead Redemption</option>
+                        <option value="Red Dead Redemption 2">Red Dead Redemption 2</option>
+                        <option value="Bully">Bully</option>
+                        <option value="Manhunt">Manhunt</option>
+                    </select>
+                </div>
+            </fieldset>
+            <div class="form-group">
+                <label for="plataforma">Plataforma de juego:</label>
+                <div>
+                    <input type="radio" id="pc" name="plataforma" value="PC" required>
+                    <label for="pc">PC</label>
+                </div>
+                <div>
+                    <input type="radio" id="nintendo" name="plataforma" value="Nintendo Switch" required>
+                    <label for="nintendo">Nintendo Switch</label>
+                </div>
+                <div>
+                    <input type="radio" id="xboxone" name="plataforma" value="Xbox Series One" required>
+                    <label for="xboxone">Xbox Series One</label>
+                </div>
+                <div>
+                    <input type="radio" id="xboxseries" name="plataforma" value="Xbox Series X/S" required>
+                    <label for="xboxseries">Xbox Series X/S</label>
+                </div>
+                <div>
+                    <input type="radio" id="ps4" name="plataforma" value="PlayStation 4" required>
+                    <label for="ps4">PlayStation 4</label>
+                </div>
+                <div>
+                    <input type="radio" id="ps5" name="plataforma" value="PlayStation 5" required>
+                    <label for="ps5">PlayStation 5</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" class="form-control" rows="5" required></textarea>
+            </div>
+            <div class="form-group text-center">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="reset" class="btn btn-secondary">Limpiar</button>
+            </div>
+        </form>
+
+        <footer class="bg-dark text-white py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 d-flex justify-content-start">
+                        <p class="autor mb-0">© 2024 Rockstar Games. Todos los derechos reservados.</p>
+                    </div>
+                    <div class="col-lg-6 d-flex justify-content-end">
+                        <div class="iconos">
+                            <a href="https://www.facebook.com/rockstargamesnoticias/?locale=es_LA" target="_blank"><img
+                                    src="/img/face.png" alt="" width="30" height="30"></a>
+                            <a href="https://twitter.com/RockstarGames" target="_blank"><img src="/img/twitter.png"
+                                    alt="" width="30" height="30"></a>
+                            <a href="http://www.instagram.com/" target="_blank"><img src="/img/inst.png" alt=""
+                                    width="30" height="30"></a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
-
+        </footer>
+    </div>
     <script src="js/bootstrap.bundle.js"></script>
 </body>
 
